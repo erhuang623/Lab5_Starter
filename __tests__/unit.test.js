@@ -46,7 +46,7 @@ test('is a valid strong password', () => {
 });
 
 test('is a valid strong password', () => {
-  expect(isStrongPassword('Test_password123')).toBe(true);
+  expect(isStrongPassword('Test_pass')).toBe(true);
 });
 
 test('is an invalid strong password', () => {
@@ -74,18 +74,18 @@ test('is an invalid date', () => {
 });
 
 test('is a valid hex color', () => {
-  expect(isDate('#911')).toBe(true);
+  expect(isHexColor('#911')).toBe(true);
 });
 
 test('is a valid hex color', () => {
-  expect(isDate('#110029')).toBe(true);
+  expect(isHexColor('#110029')).toBe(true);
 });
 
 test('is an invalid hex color', () => {
-  expect(isDate('#91I')).toBe(false);
+  expect(isHexColor('#91I')).toBe(false);
 });
 
 test('is an invalid hex color', () => {
-  expect(isDate('#1L0O29')).toBe(false);
+  expect(isHexColor('#1L0O29')).toBe(false);
 });
 
